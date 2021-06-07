@@ -1,5 +1,5 @@
-const mangoose = require('mangoose');
-const Schema = mangoose.Schema;
+const mongoose = require('mongoose');
+const Schema = mongoose.Schema;
 
 const CourseSchema = new Schema({
   name: {
@@ -18,5 +18,5 @@ const CourseSchema = new Schema({
   },
 });
 
-const Course = mangoose.model('Course', CourseSchema);
+const Course = mongoose.model('Course', CourseSchema);
 module.exports = Course;
